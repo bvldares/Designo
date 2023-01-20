@@ -1,0 +1,40 @@
+.web-design{background-image: url("../assets/home/mobile/image-web-design.jpg");}
+.app-design{background-image: url("../assets/home/mobile/image-app-design.jpg");}
+.graphic-design{background-image: url("../assets/home/mobile/image-graphic-design.jpg");}
+
+.redirect-card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 36px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    background-color:#5f5e5e;
+    background-blend-mode: multiply;
+}
+
+.redirect-title,
+.redirect-link{
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.redirect-title{
+    font-size: var(--fs-h2-mobile);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.redirect-link{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    justify-content: center;
+}
+
+
+.router-link{
+    color: var(--white);
+    letter-spacing:5px;
+    text-decoration: none;
+}
+
