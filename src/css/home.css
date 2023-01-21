@@ -1,3 +1,7 @@
+.home{
+    margin-bottom: 315px;
+}
+
 .hero{
     background-color: var(--peach);
     padding-top: 4em;
@@ -28,16 +32,12 @@
 }
 
 .hero-img{
-    z-index: 1;
+    z-index: -1;
     position: relative;
     bottom:60px;
     margin: 0 auto;
 
 }
-
-
-
-
 .home-redirect,
 .services{
     display: flex;
@@ -72,5 +72,40 @@
     margin-bottom: 2rem;
 }
 
+@media(min-width:650px){
+    .services{
+        padding: 0 40px;
+    }
+}
 
 
+@media(min-width:650px) and (max-width:920px){
+
+    .service{
+        flex-direction: row;
+        padding: 0 40px;
+        column-gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .service-intro{
+        text-align: left;
+    }
+
+    .service-title{
+        margin-bottom: 1rem;
+    }
+
+    .service-img{
+        margin-bottom: 0;
+    }
+}
+
+
+@media(min-width:920px){
+    .services{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+}

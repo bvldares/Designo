@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Card from './components/RedirectCard'
-
+import Footer from './components/Footer'
 export default function App() {
  return (
     <div className="wrapper">
@@ -11,6 +11,7 @@ export default function App() {
         <Routes>
             <Route exact path='/' element={<Home />} />
         </Routes>
+        <Footer />
     </div>
   )
 }
