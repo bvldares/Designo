@@ -5,6 +5,7 @@
 .redirect-card{
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 90px 36px;
     text-align: center;
     border-radius: var(--border-radius);
@@ -38,3 +39,15 @@
     text-decoration: none;
 }
 
+@media(min-width:500px){
+    .web-design{background-image: url("../assets/home/tablet/image-web-design.jpg");}
+    .app-design{background-image: url("../assets/home/tablet/image-app-design.jpg");}
+    .graphic-design{background-image: url("../assets/home/tablet/image-graphic-design.jpg");}
+}
+
+
+@media(min-width:920px){
+    .web-design{background-image: url("../assets/home/desktop/image-web-design-large.jpg");}
+    .app-design{background-image: url("../assets/home/desktop/image-app-design.jpg");}
+    .graphic-design{background-image: url("../assets/home/desktop/image-graphic-design.jpg");}
+}

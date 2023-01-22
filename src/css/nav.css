@@ -23,6 +23,7 @@ nav{
 .nav-list-item{
     margin-left: 2rem;
     font-size: 14px;
+    white-space: nowrap;
 }
 
 .nav-list-item:first-child{

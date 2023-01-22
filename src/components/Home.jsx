@@ -21,9 +21,9 @@ export default function Home(){
             </section>
 
             <section className="home-redirect">
-                <RedirectCard classe="web-design" title="web design" />
-                <RedirectCard classe="app-design" title="app design" />
-                <RedirectCard classe="graphic-design" title="graphic design" /> 
+                <RedirectCard classe="web-design" title="web design" path="/webdesign"/>
+                <RedirectCard classe="app-design" title="app design" path="/appdesign" />
+                <RedirectCard classe="graphic-design" title="graphic design" path="/graphicdesign" /> 
             </section>
 
             <section className="services">
