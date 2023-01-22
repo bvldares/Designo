@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "./Button";
 import "../css/footer.css"
 import logoLight from "../assets/shared/desktop/logo-light.png"
 export default function Footer(){
@@ -15,14 +14,14 @@ export default function Footer(){
                     find out how our expertise can help your business grow.
                 </p>
                 </div>
-                <Button className="footer-redirect-btn" path="contact" caption="GET IN TOUCH"/>
+                <Link className="footer-redirect-contact-button" to="/contact">GET IN TOUCH</Link>
             </div>
             
 
             <div className="footer-navigation">
                 <img className="logo-dark" src={logoLight} alt="logo" />
                 <ul className="footer-list">
-                <li className="footer-list-item"><Link className="footer-links" to="/company">OUR COMPANY</Link></li>
+                <li className="footer-list-item"><Link className="footer-links" to="/about">OUR COMPANY</Link></li>
                 <li className="footer-list-item"><Link className="footer-links" to="/location">LOCATIONS</Link></li>
                 <li className="footer-list-item"><Link className="footer-links" to="/contact">CONTACT</Link></li>
             </ul>

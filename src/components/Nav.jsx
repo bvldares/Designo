@@ -11,9 +11,9 @@ export default function Nav(){
 
     return (
         <nav>
-            <img className="nav-logo" src={logoDark} alt="logo" />
+            <Link to="/"><img className="nav-logo" src={logoDark} alt="logo" /></Link>
             <ul className="nav-list" style={style}>
-                <li className="nav-list-item"><Link className="nav-links" to="/company">OUR COMPANY</Link></li>
+                <li className="nav-list-item"><Link className="nav-links" to="/about">OUR COMPANY</Link></li>
                 <li className="nav-list-item"><Link className="nav-links" to="/location">LOCATIONS</Link></li>
                 <li className="nav-list-item"><Link className="nav-links" to="/contact">CONTACT</Link></li>
             </ul>

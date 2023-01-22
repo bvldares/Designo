@@ -104,3 +104,20 @@ select {
 }
 
 
+.footer-redirect-contact-button,
+.hero-intro-button{
+  padding: 1rem 1.5rem;
+  color: var(--dark-grey);
+  background-color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  letter-spacing: 1.4px;
+}
+
+.hero-intro-button:hover,
+.hero-intro-button:focus,
+.footer-redirect-contact-button:hover,
+.footer-redirect-contact-button:focus{
+  background-color:var(--light-peach);
+  color: var(--white);
+}

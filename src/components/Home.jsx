@@ -1,11 +1,11 @@
 import React from "react";
 import "../css/home.css"
 import RedirectCard from "./RedirectCard";
-import Button from "./Button";
 import heroImg from "../assets/home/desktop/image-hero-phone.png"
 import passionateIllustration from "../assets/home/desktop/illustration-passionate.svg"
 import resourcefulIllustration from "../assets/home/desktop/illustration-resourceful.svg"
 import friendlyIllustration from "../assets/home/desktop/illustration-friendly.svg"
+import { Link } from "react-router-dom";
 
 
 export default function Home(){
@@ -15,7 +15,7 @@ export default function Home(){
                 <div className="hero-intro">
                 <h1 className="hero-title">Award-winning custom designs and digital branding solutions</h1>
                 <p className="hero-body">With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
-                <Button path="about" caption="LEARN MORE" />
+                <Link to="/about" className="hero-intro-button">LEARN MORE</Link>
                 </div>
                 <img className="hero-img" src={heroImg} alt="phone img" />
             </section>
