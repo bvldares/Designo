@@ -8,6 +8,7 @@ import Graphic from "./components/Graphic"
 import About from './components/About'
 import Footer from './components/Footer'
 import Location from './components/Location'
+import Contact from './components/Contact'
 export default function App() {
  return (
     <>
@@ -19,6 +20,7 @@ export default function App() {
             <Route path='/graphicdesign' element={<Graphic/>} />
             <Route path='/about' element={<About/>} />
             <Route path='/location' element={<Location/>} />
+            <Route path="/contact" element={<Contact/>} />
         </Routes>
         <Footer />
     </>

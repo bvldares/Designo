@@ -1,0 +1,123 @@
+.contact{
+    margin-bottom: 300px;
+}
+
+.contact-wrapper{
+    color: var(--white);
+    text-align: center;
+    padding:0 1.5rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--peach);
+}
+
+.contact-intro-title{
+    margin-top: 70px;
+    font-size: var(--fs-h1-mobile);
+}
+
+.contact-intro-body{
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.contact-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:var(--peach);
+}
+
+.contact-form-input{
+    padding: 10px;
+    border:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: var(--peach);
+}
+
+.contact-form-input::placeholder{
+    color: rgba(255,255,255,0.6);
+}
+
+textarea{
+    height: 125px;
+    resize: none;
+}
+
+.contact-form-btn{
+    align-self: center;
+    padding: .8rem 2rem;
+    background-color: var(--light-peach);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    margin-top: 2.5rem;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+@media(min-width:720px){
+   .contact{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+   }
+
+   .contact-wrapper{
+        border-radius: 15px;
+        padding:0 40px;
+   }
+
+   .contact-intro-title{
+    font-size: var(--fs-h1-tablet);
+    }
+}
+
+
+
+@media(min-width:920px){
+   .contact{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+   }
+
+   .contact-wrapper{
+     display: flex;
+     flex-direction: row;
+     padding: 32px 96px;
+   }
+
+   
+   .contact-intro-title{
+    font-size: var(--fs-h1-desktop);
+    margin-top: 0;
+}
+   .contact-form-btn{
+        margin-bottom: 0;
+        align-self: flex-end;
+    }
+
+   .contact-wrapper div{
+    padding: 0 40px;
+    max-width: 50%;
+   }
+
+   .contact-form{
+    width: 40%;
+    margin: 0 auto;
+    padding: 40px 0;
+   }
+}
+
+@media(min-width:1120px){
+   .contact{
+        max-width: 1020px;
+        margin-left: auto;
+        margin-right: auto;
+   }
+}

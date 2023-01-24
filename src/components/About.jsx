@@ -3,7 +3,7 @@ import "../css/about.css"
 import aboutHero from "../assets/about/desktop/image-about-hero.jpg"
 import worldclasstalent from "../assets/about/mobile/image-world-class-talent.jpg"
 import realDeal from "../assets/about/mobile/image-real-deal.jpg"
-import RedirectLocations from "./redirectLocations"
+import RedirectLocations from "./RedirectLocations"
 
 export default function About(){
     return (
