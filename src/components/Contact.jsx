@@ -30,10 +30,10 @@ export default function Contact(){
                 </div>
                 
                 <form className="contact-form">
-                    <input type="text" className="contact-form-input" placeholder="Name" value={name} onChange={handleNameChange} />
-                    <input type="email" className="contact-form-input" placeholder="Email Address" value={mail} onChange={handleMailChange} />
-                    <input type="text" maxLength="12" className="contact-form-input" placeholder="Phone" value={phone} onChange={handlePhoneChange} />
-                    <textarea className="contact-form-input" maxLength="140" value={message}  onChange={handleMessageChange} placeholder="Message"/>
+                    <input type="text" className="contact-form-input" placeholder="Name" value={name} required onChange={handleNameChange} />
+                    <input type="mail" className="contact-form-input" placeholder="Email Address" value={mail} required onChange={handleMailChange} />
+                    <input type="text" maxLength="12" className="contact-form-input" placeholder="Phone" value={phone} required onChange={handlePhoneChange} />
+                    <textarea className="contact-form-input" maxLength="140" value={message}  onChange={handleMessageChange} required placeholder="Message"/>
                     <button className="contact-form-btn">Submit</button>
                 </form>
             </div>
