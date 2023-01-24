@@ -1,0 +1,119 @@
+.location{
+    margin-bottom: 300px;
+}
+
+.office{
+    margin-bottom: 2.5rem;
+}
+
+.office-info{
+    padding:80px 1.5rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:#FDF3F0;
+}
+
+.office-info-title{
+    color: var(--peach);
+    font-size: var(--fs-h1-mobile);
+    font-weight: 300;
+}
+
+
+.office-intro-meta{
+    width: 60%;
+}
+
+.office-intro-meta p{
+    margin-top: 1.5rem;
+    background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+}
+
+.location span{
+    font-weight: 700;
+}
+
+@media(min-width:550px){ .office-info-title{font-size: var(--fs-h1-tablet);}}
+
+
+@media(min-width:680px){
+    .location{
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .office img{border-radius: 15px 15px 0 0;}
+    .office-intro-meta{border-radius: 0 0 15px 15px;}
+
+    
+    .office-intro-meta{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    .office img{
+        width: 100%;
+    }
+
+    .office-info-title{
+        width: 70%;
+        text-align: left;
+    }
+
+}
+
+@media(min-width:980px){
+    #Canada{content: url("../assets/locations/desktop/image-map-canada.png");}
+    #Australia{content: url("../assets/locations/desktop/image-map-australia.png");}
+    #UnitedKingdom{content: url("../assets/locations/desktop/image-map-uk.png");}
+
+
+    .office{
+        display: flex;
+        gap: 40px;
+    }
+
+
+    .office img{
+        max-width: 350px;
+        border-radius: 1;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    
+    .office-info{
+       width: 100%;
+       align-items: flex-start;
+       padding: 80px;
+       border-radius: 15px;
+    }
+
+    .office-info-title{
+        width: 100%;
+        text-align:left;
+    }
+
+    .office-intro-meta{
+        display: flex;
+        text-align: left;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+
+}
+
+@media(min-width:1100px){
+    .office-info-title{font-size: var(--fs-h1-desktop);}
+    .location{
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 40px;
+    }
+}

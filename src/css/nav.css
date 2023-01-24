@@ -26,6 +26,10 @@ nav{
     white-space: nowrap;
 }
 
+.nav-links:hover{
+    color: #857d7d;
+}
+
 .nav-list-item:first-child{
     margin-left: 0;
 }
