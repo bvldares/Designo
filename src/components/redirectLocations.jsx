@@ -4,7 +4,6 @@ import canada from "../assets/shared/desktop/illustration-canada.svg"
 import australia from "../assets/shared/desktop/illustration-australia.svg"
 import unitedkingdom from "../assets/shared/desktop/illustration-united-kingdom.svg"
 import "../css/redirectLocation.css"
-import { nanoid } from 'nanoid'
 
 
 
@@ -18,7 +17,7 @@ export default function RedirectLocations(){
 
     const locationElement = dataArr.map(country =>{
         return (
-            <div className="location-office" key={nanoid()}>
+            <div className="location-office">
                 <img className="location-office-img" src={country.img} alt="country icon" />
                 <h3 className="location-office-title">{country.title}</h3>
                 <Link className="location-office-link" to="/location">See Location</Link>
