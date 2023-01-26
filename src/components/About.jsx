@@ -3,7 +3,6 @@ import "../css/about.css"
 import aboutHero from "../assets/about/desktop/image-about-hero.jpg"
 import worldclasstalent from "../assets/about/mobile/image-world-class-talent.jpg"
 import realDeal from "../assets/about/mobile/image-real-deal.jpg"
-import RedirectLocations from "./RedirectLocations";
 import { Link } from "react-router-dom";
 import canada from "../assets/shared/desktop/illustration-canada.svg"
 import australia from "../assets/shared/desktop/illustration-australia.svg"
