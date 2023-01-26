@@ -4,8 +4,31 @@ import aboutHero from "../assets/about/desktop/image-about-hero.jpg"
 import worldclasstalent from "../assets/about/mobile/image-world-class-talent.jpg"
 import realDeal from "../assets/about/mobile/image-real-deal.jpg"
 import RedirectLocations from "./RedirectLocations";
+import { Link } from "react-router-dom";
+import canada from "../assets/shared/desktop/illustration-canada.svg"
+import australia from "../assets/shared/desktop/illustration-australia.svg"
+import unitedkingdom from "../assets/shared/desktop/illustration-united-kingdom.svg"
+import "../css/redirectLocation.css"
 
 export default function About(){
+
+    const dataArr = [
+        {img:canada, title:"Canada"},
+        {img:australia, title:"Australia"},
+        {img:unitedkingdom, title:"United Kingdom"}
+    ]
+
+    const locationElement = dataArr.map(country =>{
+        return (
+            <div className="location-office">
+                <img className="location-office-img" src={country.img} alt="country icon" />
+                <h3 className="location-office-title">{country.title}</h3>
+                <Link className="location-office-link" to="/location">See Location</Link>
+            </div>
+        )
+    })
+
+
     return (
         <main className="about">
             <section className="about-hero">
@@ -29,7 +52,10 @@ export default function About(){
                 </div>
             </section>
 
-            <RedirectLocations />
+        <section className="redirect-locations">
+            {locationElement}
+        </section>
+    
 
             <section className="about-skills about-skills-realdeal">
                 <img className="about-skills-img realdeal " src={realDeal} alt="girl in white room" />
