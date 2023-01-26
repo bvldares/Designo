@@ -1,7 +1,6 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import "../css/contact.css"
-import { Link } from "react-router-dom";
 import canada from "../assets/shared/desktop/illustration-canada.svg"
 import australia from "../assets/shared/desktop/illustration-australia.svg"
 import unitedkingdom from "../assets/shared/desktop/illustration-united-kingdom.svg"
