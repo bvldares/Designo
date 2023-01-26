@@ -6,6 +6,7 @@ import change from "../assets/graphic-design/desktop/image-change.jpg"
 import water from "../assets/graphic-design/desktop/image-boxed-water.jpg"
 import science from "../assets/graphic-design/desktop/image-science.jpg"
 import "../css/graphic.css"
+import { nanoid } from 'nanoid'
 
 const cardArr = [
     {img:change, title: "Tim Brown", body:"A book cover designed for Tim Brown’s new release, 'Change’"},
@@ -13,7 +14,7 @@ const cardArr = [
     {img:science, title:"Science!", body:"A poster made in collaboration with the Federal Art Project"}
 ]
 
-const CardElements = cardArr.map(card => <ServiceCard img={card.img} title={card.title} body={card.body}  />)
+const CardElements = cardArr.map(card => <ServiceCard img={card.img} title={card.title} body={card.body}  key={nanoid()}/>)
 
 
 export default function Graphic(){

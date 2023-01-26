@@ -8,10 +8,10 @@ export default function RedirectCard(props){
     return (
         <div className={`redirect-card ${props.classe}`}>
             <h2 className="redirect-title">{props.title}</h2>
-            <p className="redirect-link">
+            <h4 className="redirect-link">
                 <p><Link className="router-link" to={props.path}>View Project</Link></p>
                 <img src={arrow} alt="right arrow icon" />   
-            </p>
+            </h4>
         </div>
     )
 }

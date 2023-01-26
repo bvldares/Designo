@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/webdesign.css"
+import { nanoid } from 'nanoid'
 import express from "../assets/web-design/desktop/image-express.jpg"
 import transfer from "../assets/web-design/desktop/image-transfer.jpg"
 import photon from "../assets/web-design/desktop/image-photon.jpg"
@@ -21,7 +22,7 @@ const cardArr = [
 ]
 
 
-const CardElements = cardArr.map(card => <ServiceCard img={card.img} title={card.title} body={card.body}  />)
+const CardElements = cardArr.map(card => <ServiceCard img={card.img} title={card.title} body={card.body} key={nanoid()} />)
 
 export default function Webdesign(){
     

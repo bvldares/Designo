@@ -3,7 +3,7 @@ import "../css/location.css"
 import canada from "../assets/locations/tablet/image-map-canada.png"
 import australia from "../assets/locations/tablet/image-map-australia.png"
 import uk from "../assets/locations/tablet/image-map-uk.png"
-
+import { nanoid } from 'nanoid'
 
 
 export default function Location(){
@@ -16,7 +16,7 @@ export default function Location(){
     
     const locationElement = locationData.map(location =>{
         return (
-            <div className="office" >
+            <div className="office" key={nanoid()}>
                 <img src={location.img} id={location.country} alt="map of the office" />
                 <div className="office-info">
                     <h1 className="office-info-title">{location.country}</h1>

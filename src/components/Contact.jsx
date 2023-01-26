@@ -1,8 +1,14 @@
 import React,{useState} from "react";
+import { Link } from "react-router-dom";
 import "../css/contact.css"
 import RedirectLocations from "./RedirectLocations";
 
+
+
 export default function Contact(){
+
+
+
 
     const [name, setName] = useState("")
     const [mail, setMail] = useState("")
@@ -36,9 +42,12 @@ export default function Contact(){
                     <textarea className="contact-form-input" maxLength="140" value={message}  onChange={handleMessageChange} required placeholder="Message"/>
                     <button className="contact-form-btn">Submit</button>
                 </form>
+                
             </div>
 
             <RedirectLocations />
+            
         </main>
+        
     )
 }

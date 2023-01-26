@@ -26,6 +26,7 @@ ol {
   list-style: none;
 }
 
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -123,4 +124,8 @@ select {
 .footer-redirect-contact-button:focus{
   background-color:var(--light-peach);
   color: var(--white);
+}
+
+h4{
+  font-weight: 300;
 }

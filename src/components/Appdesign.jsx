@@ -1,4 +1,5 @@
 import React from "react";
+import { nanoid } from 'nanoid'
 import "../css/appdesign.css"
 import InnerpageHero from "./InnerpageHero"
 import RedirectCard from "./RedirectCard"
@@ -8,6 +9,7 @@ import eyecam from "../assets/app-design/desktop/image-eyecam.jpg"
 import faceit from "../assets/app-design/desktop/image-faceit.jpg"
 import todo from "../assets/app-design/desktop/image-todo.jpg"
 import loopstudios from "../assets/app-design/desktop/image-loopstudios.jpg"
+
 
 
 export default function Appdesign(){
@@ -20,7 +22,7 @@ export default function Appdesign(){
         {img:loopstudios, title:"Loopstudios", body:"Fantastic VR experience application made for Loopstudios"}
     ]
     
-    const CardElements = cardArr.map(card => <ServiceCard img={card.img} title={card.title} body={card.body}  />)
+    const CardElements = cardArr.map(card => <ServiceCard img={card.img} title={card.title} body={card.body} key={nanoid()} />)
     
     return (
         <main className="appdesign">

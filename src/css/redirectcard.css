@@ -30,6 +30,13 @@
     align-items: center;
     column-gap: .5rem;
     justify-content: center;
+    gap: 5px;
+    transition: 500ms ease;
+}
+
+.redirect-link:hover{
+    gap: 15px;
+  
 }
 
 
