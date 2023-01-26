@@ -5,6 +5,9 @@ import australia from "../assets/shared/desktop/illustration-australia.svg"
 import unitedkingdom from "../assets/shared/desktop/illustration-united-kingdom.svg"
 import "../css/redirectLocation.css"
 import { nanoid } from 'nanoid'
+
+
+
 export default function RedirectLocations(){
 
     const dataArr = [

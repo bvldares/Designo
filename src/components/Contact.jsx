@@ -7,9 +7,6 @@ import RedirectLocations from "./RedirectLocations";
 
 export default function Contact(){
 
-
-
-
     const [name, setName] = useState("")
     const [mail, setMail] = useState("")
     const [phone, setPhone] = useState("")
