@@ -29,7 +29,7 @@ export default function About(){
                 </div>
             </section>
 
-            <RedirectLocations/>
+            <RedirectLocations />
 
             <section className="about-skills about-skills-realdeal">
                 <img className="about-skills-img realdeal " src={realDeal} alt="girl in white room" />
